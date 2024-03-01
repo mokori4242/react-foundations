@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            // 'app' idを持つdiv要素を選択
+            const app = document.getElementById('app');
+            // 新しいH1要素を作成
+            const header = document.createElement('h1'); // <h1></h1>
+            // H1要素のための新しいテキストノードを作成
+            const text = 'Develop. Preview. Ship.';
+            const headerContent = document.createTextNode(text); // Develop. Preview. Ship.
+            // テキストをH1要素に追加
+            header.appendChild(headerContent); // <h1>Develop. Preview. Ship.</h1>
+            // H1要素をdiv内に配置
+            app.appendChild(header); // <div id="app"><h1>Develop. Preview. Ship.</h1></div>
+        </script>
+    </body>
+</html>
